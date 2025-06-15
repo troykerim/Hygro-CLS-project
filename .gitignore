@@ -1,0 +1,8 @@
+hardware/hygro_cls_proj
+software/*
+!software/Hygro_CLS_temp_app
+software/Hygro_CLS_temp_app/*
+!software/Hygro_CLS_temp_app/src
+software/Hygro_CLS_temp_app/src/Xilinx.spec
+software/Hygro_CLS_temp_app/src/lscript.ld
+software/Hygro_CLS_temp_app/src/README.txt
