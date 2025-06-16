@@ -27,23 +27,32 @@ The system is implemented on a Zynq-7000 SoC (Zybo Z7-10), combining both hardwa
 
 ---
 
-## Final Results
+## Results
+### CLS LCD Output
 
-| CLS LCD Output | Vitis Serial Terminal |
-|----------------|------------------------|
-| ![CLS Output](images/CLS_output.jpg) | ![Vitis Terminal](images/Vitis_Serial_terminal.png) |
+![CLS Output](images/CLS_output.jpg)
+
+This shows the PmodHYGRO and PmodCLS connected to the Zybo Z7-10. The LCD displays the live temperature in Fahrenheit and the relative humidity.
+
+---
+
+### Vitis Serial Terminal Output
+
+![Vitis Terminal](images/Vitis_Serial_terminal.png)
+
+In addition to displaying the values on the CLS LCD, the system logs the temperature and humidity over UART to the Vitis serial terminal once per second for debugging and monitoring purposes.
 
 
-## Tasks
+
+## Future Work
 
 - [ ] Add video demo.
 - [ ] Add screenshots.
 - [ ] Add additional features:
-  - Log data to UART
   - Add Fahrenheit/Celsius toggle via button
   - Display min/max values
-- [ ] Create alternate version using RTL/HDL (without Vivado IP integrator)
-- [ ] Create alternate version using I²C and UART modes for CLS Pmod (instead of SPI)
+- [ ] Create alternate version using RTL/HDL (without Vivado IP integrator):
+  - Use I²C and UART modes for CLS Pmod (instead of SPI)
 
 ---
 
